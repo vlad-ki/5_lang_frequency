@@ -23,6 +23,6 @@ def get_most_frequent_words(text, count):
 
 if __name__ == '__main__':
     filepath = input('Введите путь к файлу: ')
-    top_10_words = get_most_frequent_words(load_data(filepath), 10)
-    for word, count in top_10_words:
+    top_words = get_most_frequent_words(load_data(filepath), 10)
+    for word, count in top_words:
         print('{}: {}\n'.format(word, count))
